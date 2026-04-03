@@ -1,0 +1,176 @@
+
+{
+    "Format": "2.8.0",
+    "DynamicTokens": [
+
+
+        {
+            "Name": "Wedding",
+            "Value": "WeddingOutfits",
+            "When":
+            {
+                "DayEvent": "wedding"
+            }
+        },
+		
+		
+		{
+            "Name": "Aerobics",
+            "Value": "Spring"
+        },
+		
+		{
+            "Name": "Aerobics",
+            "Value": "Summer",
+            "When":
+            {
+                "Season": "Summer"
+            }
+        },
+		
+		{
+            "Name": "Aerobics",
+            "Value": "Fall",
+            "When":
+            {
+                "Season": "Fall"
+            }
+        },
+		
+		{
+            "Name": "Aerobics",
+            "Value": "Winter_Indoor",
+            "When":
+            {
+                "Season": "Winter",
+				"WinterIndoorOutdoorOutfits": "IndoorOutdoor, IndoorOnly"
+            }
+        },
+		
+		{
+            "Name": "Aerobics",
+            "Value": "Winter_Outdoor",
+            "When":
+            {
+                "Season": "Winter",
+				"WinterIndoorOutdoorOutfits": "OutdoorOnly"
+            }
+        }
+    ],
+
+    "ConfigSchema":
+    {
+        "NoNose":
+        {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
+        "FestivalOutfits":
+        {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
+        "WinterIndoorOutdoorOutfits":
+		{
+			"AllowValues": "IndoorOutdoor, IndoorOnly, OutdoorOnly",
+			"Default": "IndoorOutdoor"
+		},
+        "ExtraOutfits":
+        {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
+		"ShirtSpring":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "WarmWeather"
+        },
+		"ShirtSummer":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "WarmWeather"
+        },
+		"ShirtFall":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "ColdWeather"
+        },
+		"ShirtWinter":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "ColdWeather"
+        },
+		"ShoesSpring":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "ColdWeather"
+        },
+		"ShoesSummer":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "WarmWeather"
+        },
+		"ShoesFall":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "WarmWeather"
+        },
+		"ShoesWinter":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "ColdWeather"
+        },
+		"IslandSummerClothes":
+        {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
+		"SlightlyCuterSebastian":
+        {
+			"AllowValues": "True, False",
+			"Default": "True"
+		}																				
+    },
+"Changes": [
+        {
+            "LogName": "Sabrina Name Patch",
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries": {
+                "Sebastian": "Sabrina"
+            }
+        },
+        
+        {  
+            "LogName": "Sebastian Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Sebastian.json",
+            "When": 
+            {
+                "HasFile:{{FromFile}}": true,
+                "SlightlyCuterSebastian": "True"
+            }
+        },
+        {
+            "LogName": "Sabrina Identity - Vanilla Science",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Sebastian": {
+                    "DisplayName": "Sabrina",
+                    "Gender": "Female",
+                    "BirthSeason": "Winter",
+                    "BirthDay": 10,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "ScienceHouse",
+                            "Tile": { "X": 4, "Y": 24 }
+                        }
+                    ],
+                    "Speaker": "Sebastian"
+                }
+            }
+        }
+    ]
+}
