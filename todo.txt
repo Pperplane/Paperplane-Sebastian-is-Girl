@@ -1,0 +1,5 @@
+Update:
+- Characters
+- Portraits
+- Clean Dialogues
+- Fix true/Random/Cursors_seasons

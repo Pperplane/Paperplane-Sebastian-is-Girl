@@ -133,14 +133,36 @@
     },
 "Changes": [
         {
-            "LogName": "Sabrina Name Patch",
+            "LogName": "Sabrina Name Patch - String",
             "Action": "EditData",
-            "Target": "Strings/Characters",
+            "Target": "Strings/NPCNames",
             "Entries": {
                 "Sebastian": "Sabrina"
             }
         },
-        
+        {
+            "LogName": "Sabrina Name Patch - Data",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                    "Sebastian": {
+                        "DisplayName": "Sabrina",
+                        "Gender": "Female"
+                    }
+                }
+        },
+    
+        {
+            "LogName":"Sabrina Event Dialogue Patch",
+            "Action": "Include",
+            "FromFile": "assets/Code/eventsPatch.json"
+        },
+        {
+            "LogName": "Sabrina Dialogue Patch",
+            "Action": "Include",
+            "FromFile": "assets/Code/dialoguePatch.json"
+        },
+
         {  
             "LogName": "Sebastian Seasonal Include",
             "Action": "Include",
@@ -149,27 +171,6 @@
             {
                 "HasFile:{{FromFile}}": true,
                 "SlightlyCuterSebastian": "True"
-            }
-        },
-        {
-            "LogName": "Sabrina Identity - Vanilla Science",
-            "Action": "EditData",
-            "Target": "Data/Characters",
-            "Entries": {
-                "Sebastian": {
-                    "DisplayName": "Sabrina",
-                    "Gender": "Female",
-                    "BirthSeason": "Winter",
-                    "BirthDay": 10,
-                    "Home": [
-                        {
-                            "Id": "Default",
-                            "Location": "ScienceHouse",
-                            "Tile": { "X": 4, "Y": 24 }
-                        }
-                    ],
-                    "Speaker": "Sebastian"
-                }
             }
         }
     ]

@@ -1,0 +1,41 @@
+{
+    "Changes": [
+        {
+            "LogName":"Sabrina Marriage Dialogue Patch",
+            "Action": "Load",
+            "Priority": "High",
+            "Target": "Characters/Dialogue/MarriageDialoguSebastian",
+            "FromFile": "assets/Characters/Dialogue/MarriageDialogue.json"
+        },
+
+        {
+            "LogName":"Sam to Sabrina Dialogue Patch",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries" :{
+                "Wed6": "I've been friends with Sabrina for a while. She's a pretty cool girl.#$e#If you two weren't around I wouldn't really have any friends in town."
+            }
+        },
+        {
+            "LogName":"Robin to Sabrina Dialogue Patch",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Robin",
+            "Entries" :{
+                "Fri": "You've met my daughter Sabrina, right? She lives downstairs.#$e#She's a little shy, but I'm sure she'll warm up to you if you're nice to her.",
+                "Fri_inlaw_Sebastian": "I miss my Sabby... he was always a little misunderstood, but I believed in him.",
+                "Fri4": "#$1 RobinSeb#I found an ashtray in Sabrina's room, and it smelled really weird. Should I be worried about this?#$e#Sometimes I worry about Sabrina... she doesn't have many friends and doesn't really seem to care about her future very much...#$e#I would talk to her about it but she never opens up to me.",
+                "Fri4_inlaw_Sebastian": "Sabrina told me she's trying to quit smoking! I'm really proud of her.",
+                "winter_Fri_inlaw_Sebastian": "I think the farm life is really healthy for Sabby."
+            }
+        },
+        {
+            "LogName":"Maru to Sabrina Dialogue Patch",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries" :{
+                "summer_Tue": "Sabrina is my half-sister, if you didn't know already.#$e#We look totally different.",
+                "summer_Tue4": "Sabrina hardly ever talks to me. I wonder if she even likes me at all?#$e#It's sad, I want to have a sister but she doesn't act like one."
+            }
+        }
+    ]
+}
