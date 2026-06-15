@@ -1,15 +1,38 @@
 {
 
     "Format": "2.9.0",
-
+    //TODO: You can only talk to NPC if you guys are at the same area, Use your position as the reference if they are inside or nah!
+   
     "Changes": [
+        // {
+        //     "Action": "Load",
+        //     "Target": "Mods/Paperplane01.SebastianIsGirlContentPatcher/WinterOutdoorSprite",
+        //     "FromFile": "assets/sprites/Sebastian_winter_outdoor_sprite.png"
+        // },
+        {
+            "Action": "Load",
+            "Target": "Mods/Paperplane01.SebastianIsGirlContentPatcher/WinterOutdoorPortrait",
+            "FromFile": "assets/portraits/Sebastian_winter_true.png"
+        },
+        // {
+        //     "Action": "Load",
+        //     "Target": "Mods/Paperplane01.SebastianIsGirlContentPatcher/WinterIndoorSprite",
+        //     "FromFile": "assets/sprites/Sebastian_winter_indoor_sprite.png"
+        // },
+        {
+            "Action": "Load",
+            "Target": "Mods/Paperplane01.SebastianIsGirlContentPatcher/WinterIndoorPortrait",
+            "FromFile": "assets/portraits/Sebastian_winter_false.png"
+        },
+
         {
             "LogName": "Sebastian Name Patch: Sebastian to Sabrina",
             "Action": "EditData",
             "Target": "Strings/NPCNames",
             "Entries": {
                 "Sebastian": "Sabrina"
-            }
+            },
+            "Priority": "Late"
         },
 
         {
@@ -18,8 +41,38 @@
             "Target": "Portraits/Sebastian",
             "FromFile":  "assets/portraits/Sebastian_{{Season}}.png",
             "Priority": "Late",
-            "When":{
-                "Season": "spring, summer" 
+            "When": {
+                "Season": "spring, summer, fall"
+            }
+        },
+        {
+            "LogName": "Sebastian Winter Indoor/Outdoor Outfits",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries":{
+            "Sebastian": {
+            "Fields": {
+                    "Appearance": [
+                        {
+                            "Id": "Sebastian_Winter_Outdoor",
+                            "Condition": "LOCATION_IS_OUTDOORS Target",
+                            // "Sprite": "Mods/Paperplane01.SebastianIsGirlContentPatcher/WinterOutdoorSprite", 
+                            "Portrait": "Mods/Paperplane01.SebastianIsGirlContentPatcher/WinterOutdoorPortrait",
+                            "Precedence": -10
+                        },
+                        {
+                            "Id": "Sebastian_Winter_Indoor",
+                            "Condition": "!LOCATION_IS_OUTDOORS Target",
+                            // "Sprite": "Mods/Paperplane01.SebastianIsGirlContentPatcher/WinterIndoorSprite", 
+                            "Portrait": "Mods/Paperplane01.SebastianIsGirlContentPatcher/WinterIndoorPortrait",
+                            "Precedence": -10
+                        }
+                    ]
+                }
+            }
+        },
+            "When": {
+                "Season": "winter"
             }
         }
     ]
