@@ -1,5 +1,0 @@
-Winter 8
-[Content Patcher] Can't apply image patch "Paperplane01's Sebastian is Girl > Sebastian Seasonal Include > assets/Code/Sebastian.json > Sebastian - Motorbike Cursors" to LooseSprites/Cursors: the FromFile file 'assets\true\Random\Cursors_winter.png' doesn't exist.
-[Content Patcher] Can't apply image patch "Paperplane01's Sebastian is Girl > Sebastian Seasonal Include > assets/Code/Sebastian.json > Sebastian - Motorbike Cursors" to LooseSprites/Cursors: the FromFile file 'assets\true\Random\Cursors_winter.png' doesn't exist.
-Summer 8
-[Content Patcher] Can't apply image patch "Paperplane01's Sebastian is Girl > Sebastian Seasonal Include > assets/Code/Sebastian.json > Sebastian - Motorbike Cursors" to LooseSprites/Cursors: the FromFile file 'assets\true\Random\Cursors_summer.png' doesn't exist.

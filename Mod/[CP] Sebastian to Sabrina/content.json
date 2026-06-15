@@ -1,0 +1,27 @@
+{
+
+    "Format": "2.9.0",
+
+    "Changes": [
+        {
+            "LogName": "Sebastian Name Patch: Sebastian to Sabrina",
+            "Action": "EditData",
+            "Target": "Strings/NPCNames",
+            "Entries": {
+                "Sebastian": "Sabrina"
+            }
+        },
+
+        {
+            "LogName": "Change to {{Season}} Attire - Portrait",
+            "Action": "EditImage",
+            "Target": "Portraits/Sebastian",
+            "FromFile":  "assets/portraits/Sebastian_{{Season}}.png",
+            "Priority": "Late",
+            "When":{
+                "Season": "spring, summer" 
+            }
+        }
+    ]
+
+}
