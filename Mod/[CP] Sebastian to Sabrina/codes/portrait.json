@@ -1,0 +1,20 @@
+{
+    "Changes": [
+        {
+            "LogName": "Change to {{Season}} Attire - Portrait",
+            "Action": "EditImage",
+            "Target": "Portraits/{{TargetSebastianFile}}",
+            "FromFile":  "assets/portraits/{{SabrinaAttire}}.png",
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
+        
+        {
+            "LogName": "Replace Beach Attire - Portrait",
+            "Action": "EditImage",
+            "Target": "Portraits/Sebastian_Beach",
+            "FromFile":  "assets/portraits/Sebastian_beach.png",
+            "Priority": "Late"
+        }
+    ]
+}

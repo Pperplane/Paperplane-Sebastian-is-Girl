@@ -27,7 +27,6 @@
                 "IsOutdoors": "false"
             }
         },
-        
 
         // Target File
         {
@@ -57,14 +56,17 @@
                 "Sebastian": "Sabrina"
             }
         },
-
+        
         {
-            "LogName": "Change to {{Season}} Attire - Portrait",
-            "Action": "EditImage",
-            "Target": "Portraits/{{TargetSebastianFile}}",
-            "FromFile":  "assets/portraits/{{SabrinaAttire}}.png",
-            "Update": "OnLocationChange",
-            "Priority": "Late"
+            "LogName": "Sabrina Portrait Patch",
+            "Action": "Include",
+            "FromFile": "codes/portrait.json"
+        },
+        
+        {
+            "LogName": "Sabrina Sprite Patch",
+            "Action": "Include",
+            "FromFile": "codes/sprite.json"
         }
     ]
 }
