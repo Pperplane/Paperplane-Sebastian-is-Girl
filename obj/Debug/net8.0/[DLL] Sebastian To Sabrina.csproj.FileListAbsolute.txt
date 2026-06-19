@@ -1,0 +1,9 @@
+D:\Arjay\01_Developments\Coding\Personal Projects\stardewValleyModding\Paperplane01-Sebastian is Girl Mod\Sebastian to Girl\bin\Debug\net8.0\SebastianToSabrina.deps.json
+D:\Arjay\01_Developments\Coding\Personal Projects\stardewValleyModding\Paperplane01-Sebastian is Girl Mod\Sebastian to Girl\bin\Debug\net8.0\SebastianToSabrina.dll
+D:\Arjay\01_Developments\Coding\Personal Projects\stardewValleyModding\Paperplane01-Sebastian is Girl Mod\Sebastian to Girl\obj\Debug\net8.0\[DLL] Sebastian To Sabrina.csproj.AssemblyReference.cache
+D:\Arjay\01_Developments\Coding\Personal Projects\stardewValleyModding\Paperplane01-Sebastian is Girl Mod\Sebastian to Girl\obj\Debug\net8.0\[DLL] Sebastian To Sabrina.GeneratedMSBuildEditorConfig.editorconfig
+D:\Arjay\01_Developments\Coding\Personal Projects\stardewValleyModding\Paperplane01-Sebastian is Girl Mod\Sebastian to Girl\obj\Debug\net8.0\[DLL] Sebastian To Sabrina.AssemblyInfoInputs.cache
+D:\Arjay\01_Developments\Coding\Personal Projects\stardewValleyModding\Paperplane01-Sebastian is Girl Mod\Sebastian to Girl\obj\Debug\net8.0\[DLL] Sebastian To Sabrina.AssemblyInfo.cs
+D:\Arjay\01_Developments\Coding\Personal Projects\stardewValleyModding\Paperplane01-Sebastian is Girl Mod\Sebastian to Girl\obj\Debug\net8.0\[DLL] Sebastian To Sabrina.csproj.CoreCompileInputs.cache
+D:\Arjay\01_Developments\Coding\Personal Projects\stardewValleyModding\Paperplane01-Sebastian is Girl Mod\Sebastian to Girl\obj\Debug\net8.0\[DLL] Sebastian To Sabrina.sourcelink.json
+D:\Arjay\01_Developments\Coding\Personal Projects\stardewValleyModding\Paperplane01-Sebastian is Girl Mod\Sebastian to Girl\obj\Debug\net8.0\SebastianToSabrina.dll

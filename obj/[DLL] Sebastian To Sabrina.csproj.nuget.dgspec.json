@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Arjay\\01_Developments\\Coding\\Personal Projects\\stardewValleyModding\\Paperplane01-Sebastian is Girl Mod\\Sebastian to Girl\\cs.csproj": {}
+    "D:\\Arjay\\01_Developments\\Coding\\Personal Projects\\stardewValleyModding\\Paperplane01-Sebastian is Girl Mod\\Sebastian to Girl\\[DLL] Sebastian To Sabrina.csproj": {}
   },
   "projects": {
-    "D:\\Arjay\\01_Developments\\Coding\\Personal Projects\\stardewValleyModding\\Paperplane01-Sebastian is Girl Mod\\Sebastian to Girl\\cs.csproj": {
+    "D:\\Arjay\\01_Developments\\Coding\\Personal Projects\\stardewValleyModding\\Paperplane01-Sebastian is Girl Mod\\Sebastian to Girl\\[DLL] Sebastian To Sabrina.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Arjay\\01_Developments\\Coding\\Personal Projects\\stardewValleyModding\\Paperplane01-Sebastian is Girl Mod\\Sebastian to Girl\\cs.csproj",
+        "projectUniqueName": "D:\\Arjay\\01_Developments\\Coding\\Personal Projects\\stardewValleyModding\\Paperplane01-Sebastian is Girl Mod\\Sebastian to Girl\\[DLL] Sebastian To Sabrina.csproj",
         "projectName": "SebastianToSabrina",
-        "projectPath": "D:\\Arjay\\01_Developments\\Coding\\Personal Projects\\stardewValleyModding\\Paperplane01-Sebastian is Girl Mod\\Sebastian to Girl\\cs.csproj",
+        "projectPath": "D:\\Arjay\\01_Developments\\Coding\\Personal Projects\\stardewValleyModding\\Paperplane01-Sebastian is Girl Mod\\Sebastian to Girl\\[DLL] Sebastian To Sabrina.csproj",
         "packagesPath": "C:\\Users\\ARJAY\\.nuget\\packages\\",
         "outputPath": "D:\\Arjay\\01_Developments\\Coding\\Personal Projects\\stardewValleyModding\\Paperplane01-Sebastian is Girl Mod\\Sebastian to Girl\\obj\\",
         "projectStyle": "PackageReference",
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -38,12 +39,18 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
+            "MonoGame.Framework.DesktopGL": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.8.1.303, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -64,26 +71,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.19, 8.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.19, 8.0.19]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.19, 8.0.19]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,13 +1,16 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v8.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = cs
+build_property.RootNamespace = [DLL]_Sebastian_To_Sabrina
 build_property.ProjectDir = D:\Arjay\01_Developments\Coding\Personal Projects\stardewValleyModding\Paperplane01-Sebastian is Girl Mod\Sebastian to Girl\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

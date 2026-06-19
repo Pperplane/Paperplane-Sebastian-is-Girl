@@ -56,7 +56,25 @@
                 "Sebastian": "Sabrina"
             }
         },
-        
+        {
+            "LogName": "Sebastian Gender & Info Patch",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [ "Sebastian" ],
+            "Entries": {
+                "Gender": "Female",
+                "DisplayName": "Sabrina"
+            }
+        },
+        {
+            "LogName": "SebastianPortrait Display Name Patch",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "SebastianPortrait":"SebastianPortrait/painting/2 2/2 2/1/999/-1/Sabrina Portrait/253/TileSheets\\junimo_furniture/true"
+            }
+        },
+
         {
             "LogName": "Sabrina Portrait Patch",
             "Action": "Include",
@@ -67,6 +85,24 @@
             "LogName": "Sabrina Sprite Patch",
             "Action": "Include",
             "FromFile": "codes/sprite.json"
+        },
+        
+        {
+            "LogName": "Sabrina Texture Patch",
+            "Action": "Include",
+            "FromFile": "codes/texture.json"
+        },
+        
+        {
+            "LogName": "Sabrina Dialogues Patch",
+            "Action": "Include",
+            "FromFile": "codes/dialogues.json"
+        },
+        
+        {
+            "LogName": "Sabrina Events Patch",
+            "Action": "Include",
+            "FromFile": "codes/events.json"
         }
     ]
 }

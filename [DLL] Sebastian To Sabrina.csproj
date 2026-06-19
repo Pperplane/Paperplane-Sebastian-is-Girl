@@ -3,15 +3,17 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
     <AssemblyName>SebastianToSabrina</AssemblyName>
+    <EnableHarmony>true</EnableHarmony>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.3.2" />
-    
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <!-- Add this line below to fix 'Point' and other XNA/MonoGame errors -->
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" PrivateAssets="all" />
   </ItemGroup>
 
 </Project>

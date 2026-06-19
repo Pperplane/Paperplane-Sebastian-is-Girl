@@ -1,0 +1,23 @@
+{
+    "Changes": [
+        {
+            "LogName": "Seasonal Cursor Update - Motorbike Cursors",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "Update": "OnLocationChange",
+            "FromFile": "assets/cursors/Cursors_{{Season}}.png",
+            "FromArea": { "X": 405, "Y": 1854, "Width": 47, "Height": 33 },
+            "ToArea": { "X": 405, "Y": 1854, "Width": 47, "Height": 33 }
+        },
+        
+        {
+            "LogName": "Update Spouse Picture",
+            "Action": "EditImage",
+            "Target": "TileSheets/junimo_furniture",
+            "FromFile": "assets/textures/junimo_furniture.png",
+            "FromArea": {"X": 100, "Y": 308, "Width": 24, "Height":25 },
+            "ToArea": {"X": 100, "Y": 308, "Width": 24, "Height":25 },
+            "Priority": "Late"
+        }
+    ]
+}

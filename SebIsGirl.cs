@@ -1,20 +1,43 @@
 ﻿using System;
 using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection.Emit;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using Newtonsoft.Json.Linq; 
+using HarmonyLib;
+using StardewValley;
+using StardewValley.Locations;
+using System.Text;
+using Microsoft.Xna.Framework;
+using StardewValley.Extensions;
 
 namespace SebastianToSabrina
 {
     public class ModEntry : Mod
     {
+        public static IMonitor ModMonitor;
         public override void Entry(IModHelper helper)
         {
-            // Only hook into the launched event to handle the file edit
+            try
+            {
+                ModMonitor = this.Monitor;
+
+                var harmony = new Harmony("Paperplane01.SebastianIsGirl");
+                harmony.PatchAll();
+
+                this.Monitor.Log("Successfully applied Island Schedule patches!", LogLevel.Debug);
+            }
+            catch (Exception ex)
+            {
+                this.Monitor.Log($"Failed to apply Harmony patches: {ex}", LogLevel.Error);
+            }
+
             helper.Events.GameLoop.GameLaunched += OnGameLaunched;
         }
 
-        private void OnGameLaunched(object? sender, GameLaunchedEventArgs e)
+        private void OnGameLaunched(object sender, GameLaunchedEventArgs e)
         {
             string targetModID = "Poltergeister.SeasonalCuteCharacters"; 
             string targetSettingName = "SlightlyCuterSebastian"; 
@@ -29,11 +52,9 @@ namespace SebastianToSabrina
                     
                     if (!Directory.Exists(targetFolder))
                     {
-                        
                         targetFolder = Path.Combine(modsDirectory, targetModID);
                     }
                     
-                    this.Monitor.Log($"[Sebastian to Sabrina] {targetFolder} exists");
                     string configPath = Path.Combine(targetFolder, "config.json");
 
                     if (File.Exists(configPath))
@@ -42,22 +63,20 @@ namespace SebastianToSabrina
                         JObject configJson = JObject.Parse(jsonText);
 
                         var settingToken = configJson[targetSettingName];
-                        this.Monitor.Log($"{settingToken}");
                         if (settingToken != null && settingToken.Type != JTokenType.Null && settingToken.Value<bool>() == true)
                         {
                             configJson[targetSettingName] = false;
-
                             File.WriteAllText(configPath, configJson.ToString());
-                            
-                            this.Monitor.Log($"[Sebastian to Sabrina] Automatically disabled '{targetSettingName}' in '{targetModID}' config to prevent identity conflicts.", LogLevel.Info);
+                            this.Monitor.Log($"[Sebastian to Sabrina] Automatically disabled '{targetSettingName}' to avoid visual conflicts.", LogLevel.Info);
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    this.Monitor.Log($"[Sebastian to Sabrina] Failed to auto-adjust the config for {targetModID}. Error: {ex.Message}", LogLevel.Warn);
+                    this.Monitor.Log($"[Sebastian to Sabrina] Failed to auto-adjust config: {ex.Message}", LogLevel.Warn);
                 }
             }
         }
     }
 }
+    
