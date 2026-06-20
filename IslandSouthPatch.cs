@@ -121,13 +121,7 @@ namespace SebastianToSabrina
                 activities.Add(new IslandSouth.IslandActivityAssigments(1400, visitors, seeded_random, last_activity_assignments));
                 activities.Add(new IslandSouth.IslandActivityAssigments(1600, visitors, seeded_random, last_activity_assignments));
 
-                // //TODO: Remove this on deployment
-                // ModEntry.ModMonitor.Log($"Visitors:", LogLevel.Debug);
-                // foreach (var visitorItem in visitors)
-                // {
-                //     ModEntry.ModMonitor.Log($"- {visitorItem.Name}", LogLevel.Debug);
-                // }
-                // REFLECTION: Set up access to private 'HasIslandAttire' and 'GetDressingRoomPoint' methods
+               
                 var hasAttireMethod = AccessTools.Method(typeof(IslandSouth), "HasIslandAttire", new Type[] { typeof(NPC) });
                 var getDressingRoomMethod = AccessTools.Method(typeof(IslandSouth), "GetDressingRoomPoint", new Type[] { typeof(NPC) });
 
