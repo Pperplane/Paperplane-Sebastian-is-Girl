@@ -10,6 +10,7 @@ ___
 - **Portraits and Sprite By**:
     - [AdarinnSinner - Sebastian_GIRL](https://www.nexusmods.com/stardewvalley/mods/463)
     - [LadyoftheLight - Sebastian_GIRL Seasonal Outfit and Portrait](https://www.nexusmods.com/stardewvalley/mods/15713)
+    - [RedK1rby - Beach Outfit and Portrait](https://www.nexusmods.com/stardewvalley/mods/7342)
 - **Dialogues Edited By:**
     - [KeionDryke - Sebastian_GIRL Dialogue](https://www.nexusmods.com/stardewvalley/mods/464)
 - Seasonal Outfit Cycling Inspired By: 
