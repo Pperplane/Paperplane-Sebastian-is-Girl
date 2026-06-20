@@ -5,6 +5,8 @@
 - [HISTORY](#-why-create-this-mod)
 - [NOTICE](#️-notice)
 - [ABOUT](#ℹ️-about-this-mod)
+- [DOWNLOAD](#-download-link)
+
 ### **©️ Credits**
 ___
 - **Portraits and Sprite By**:
@@ -37,3 +39,8 @@ ___
 This is a mod for people who want to add a twist to one of the Valley's Character, a literal twist. Experience the Valley with **Sabrina**, sister of **Maru**, and one of the daughters of **Robin the Carpenter** and **Demetrius the Scientist**. 
 
 This mod basically turns **Sebastian**, one of the Stardew Valley character into a girl named **Sabrina**.
+
+### **🔽 Download Link**
+|Site Name||
+|-----|-----|
+|**Nexus Mod**|https://www.nexusmods.com/stardewvalley/mods/47924|
